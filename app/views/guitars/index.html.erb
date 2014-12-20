@@ -20,7 +20,7 @@
         <td><%= guitar.model %></td>
         <td><%= guitar.make %></td>
         <td><%= guitar.price %></td>
-        <td><%=l guitar.created_at %></td>
+        <td><%=l guitar.created_at.to_date %></td>
         <td>
           <%= link_to t('.edit', :default => t("helpers.links.edit")),
                       edit_guitar_path(guitar), :class => 'btn btn-mini' %>
